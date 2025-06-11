@@ -5,52 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <style>
-        body{background-color: black;}
-     table, th, td{border: 1px solid black;border-collapse: collapse; padding: 30px; text-align: center;} 
-    th{background-color: cornflowerblue;}
-    td{background-color: cadetblue;}
-    .Heading{text-align: center; color: crimson; background-color: yellow;}
-    .para{font-size: 30px;color: white;}
+        body{background-color:beige}
+    .Heading{text-align: center; color: crimson; background-color: yellow; scroll-margin-top: 80px;}
+    .para{font-size: 30px;}
     .plot{background-color: coral; font-size: 25px;}
+    #Navi{list-style: none; display: flex; flex-direction: row; justify-content: space-around; position:sticky; top: 0%; background-color: cornflowerblue; padding: 10px;}
+    ul li a{text-decoration: none; background-color:floralwhite; padding: 10px; color: firebrick;}
+    ul li a:hover{color: orange; background-color: purple;}
+    #Con{margin-top: 50px;}
      </style>
      
 </head>
 <body>
-    <h1 style="text-align: center;" class="Heading">TABLE OF CONTENTS</h1>
+    <div id="Con">
+    <h1 style="text-align: center;" class="Heading" id="Navbar">HOME</h1>
     <hr>
-    <table align="center">
-        <caption style="font-size: 30px; color: whitesmoke;" >List of movies</caption>
-        <tr>
-            <th>S.No</th>
-            <th colspan="3">Movie Name</th>
-            <th>Click Here to go</th>
-        </tr>
-        <tr>
-            <td>1.</td>
-            <td colspan="3">Master</td>
-            <td><a href="#C1">Master</a></td>
-        </tr>
-        <tr>
-            <td>2.</td>
-            <td colspan="3">Leo</td>
-            <td><a href="#C2">Leo</a></td>
-        </tr>
-        <tr>
-            <td>3.</td>
-            <td colspan="3">Bigil</td>
-            <td><a href="#C3">Bigil</a></td>
-        </tr>
-        <tr>
-            <td>4.</td>
-            <td colspan="3">Mersal</td>
-            <td><a href="#C4">Mersal</a></td>
-        </tr>
-        <tr>
-            <td>5.</td>
-            <td colspan="3">Ghilli</td>
-            <td><a href="#C5">Ghilli</a></td>
-        </tr>
-    </table>
+   <ul id="Navi">
+    <li><a href="#Navbar">Home</a></li>
+    <li><a href="#C1">Master</a></li>
+    <li><a href="#C2">Leo</a></li>
+    <li><a href="#C3">Bigil</a></li>
+    <li><a href="#C4">Mersal</a></li>
+    <li><a href="#C5">Ghilli</a></li>
+   </ul>
     <hr>
     <h1 class="Heading" id="C1">MASTER</h1><hr>
      <div style="display: flex; align-items: flex-start; gap: 20px;">
@@ -67,7 +44,7 @@ Meanwhile in Chennai, John Durairaj (J.D.), a popular but alcoholic college lect
 
 Realizing the depth of corruption and abuse, J.D. reforms himself and starts changing the lives of the inmates. He uncovers Bhavani's entire operation, including the tattoo marking system used to recruit scapegoats.
 
-When Bhavani retaliates by killing J.D.’s close ones, J.D. leads a counterattack. He rescues the abducted boys, defeats Bhavani's men, and finally kills Bhavani to avenge the dead boys.
+When Bhavani retaliates by killing J.D.'s close ones, J.D. leads a counterattack. He rescues the abducted boys, defeats Bhavani's men, and finally kills Bhavani to avenge the dead boys.
 
 In the end, the government shuts down the corrupt facility. J.D., Das (a reformed inmate leader), and others are transferred to a new prison where they continue their mission to reform troubled youth.</p>
 <hr>
@@ -139,7 +116,7 @@ Vetri targets corrupt doctors who let a young girl die due to greed. He kidnaps 
      <div style="display: flex; align-items: flex-start; gap: 20px;">
     <img src="ghilli.jpeg" alt="Ghilli Vijay Movie" height="300px" width="300px">
     <div>
-        <p class="para">Ghilli (/ɡɪllɪ/ transl. Gutsy) is a 2004 Indian Tamil-language sports action film <mark style="color:blueviolet;">directed by Dharani and produced by A. M. Rathnam. It is a remake of the Telugu film Okkadu (2003), written and directed by Gunasekhar, with few changes made to the story. The film stars Vijay in the lead role, alongside Trisha and Prakash Raj </mark> Ashish Vidyarthi, Dhamu, Mayilsamy, Janaki Sabesh, Nancy Jennifer, Nagendra Prasad, Ponnambalam and Pandu play supporting roles.</p>
+        <p class="para">Ghilli (Gutsy) is a 2004 Indian Tamil-language sports action film <mark style="color:blueviolet;">directed by Dharani and produced by A. M. Rathnam. It is a remake of the Telugu film Okkadu (2003), written and directed by Gunasekhar, with few changes made to the story. The film stars Vijay in the lead role, alongside Trisha and Prakash Raj </mark> Ashish Vidyarthi, Dhamu, Mayilsamy, Janaki Sabesh, Nancy Jennifer, Nagendra Prasad, Ponnambalam and Pandu play supporting roles.</p>
         <p class="para">A re-mastered version in 4K was re-released worldwide in theatres on 20 April 2024 and received huge response among the audience. It has grossed around ₹26-32.50 crore during its re-release, becoming the highest grossing re-release in Indian cinema overtaking Titanic. This record was later broken by Hindi film Tumbbad in September 2024</p>
     </div>
     <hr>
@@ -154,6 +131,6 @@ After the match, he's arrested but challenged by Muthupandi to a final fight. Ve
 </p>
 <hr>
 <iframe src="https:/www.youtube.com/embed/EtJXEmW_XNM" height="300px" width="100%"></iframe>
-
+    </div>
 </body>
 </html>
