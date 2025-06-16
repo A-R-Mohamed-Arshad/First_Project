@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{background-image: linear-gradient(to top,rgb(60,60,60),rgb(20,20,20)); min-height: 100vh;}
+
+        .item{display: flex; justify-content: space-between; max-width: 500px; min-width: 350px; margin: 8px; border-bottom: 1px dotted white; gap: 50px; align-items: center;}
+        
+        .food-section {display: flex;justify-content: space-between;align-items: flex-start;gap: 10px;margin: 20px;}
+
+        .section-image{width: 450px;height: 450px;border-radius: 10px; margin-left: 20px; margin-top: 10px;}
+
+        section{color: white; font-family: Verdana; text-transform: uppercase;}
+
+        h2{border: 1px solid black; padding: 10px; border-radius: 10px; background-color: orange; max-width: 32%;}
+
+        .wrapper{display: flex; justify-content: flex-end; flex-direction: column;}
+
+        .LL{flex: 1; max-width: 60%;}
+
+        .RR{flex: 1; max-width: 60%;}
+
+        .RR .wrapper{align-items: flex-end;}
+
+        .LL .wrapper{align-items: flex-start;}
+
+        #pagination{display: flex; justify-content: space-between;}
+
+        a{text-decoration: none; color: white; border: 1px solid aliceblue; padding: 5px; border-radius: 3px;}
+
+        a:hover{background-color: purple; color: orange;}
+
+        #Listitem{display: none; list-style: none; position: absolute; width: 20%;}
+        #Listitem li{padding: 5px; background-color: orange; margin: 2px;}
+        #nav_but{background-color: orange; border: 1px solid black; border-radius: 5px;}
+        #nav_but:hover{background-color: purple; color: orange;}
+        #nav_but:hover + #Listitem{display: block;}
+        li a{color: purple; text-decoration: none; border: 0px;}
+        
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <nav>
+        <button id="nav_but">MENU</button>
+        <ul id="Listitem">
+            <li><a href="Menu.html">SOUPS</a></li>
+            <li><a href="Main_Courses.html">VEG MAIN COURSE</a></li>
+            <li><a href="Main_Course2.html">NON VEG MAIN COURSE</a></li>
+            <li><a href="Desserts.html">DESSERTS</a></li>
+        </ul>
+    </nav>
+
+   <h1 style="font-family: sans-serif; color: aliceblue; text-align: center;">FOOD MENU</h1> 
+   <h3 style="font-family: sans-serif; color: aliceblue; text-align: center;"> XYZ RESTRAUNT</h3>
+   <hr>
+    <div class="food-section">
+        <div class="LL">
+            <div class="wrapper">
+                <h2>SOUPS(VEG)</h2>
+                <div class="item"><section>hot and sour cream</section><section>₹160</section></div>
+                <div class="item"><section>cream of mushroom / tomato</section><section>₹170 / 160</section></div>
+                <div class="item"><section>sweet corn veg</section><section>₹160</section></div>
+                <div class="item"><section>veg manchow</section><section>₹170</section><section></section></div>
+                <div class="item"><section>ginger mint soup</section><section>₹170</section></div>
+                <div class="item"><section>tomato ginger</section><section>₹170</section></div>
+            </div>
+         </div>
+         <div class="section-image"><img src="soup1.jpg" style="width: 100%; border-radius: 10px;"></div> 
+    </div>
+    <div class="food-section">
+        <div class="section-image"><img src="soup2.jpeg" style="width: 100%; border-radius: 10px;"></div>
+        <div class="RR">
+            <div class="wrapper"> 
+                <h2>SOUPS(NON VEG)</h2>
+                <div class="item"><section>hot and sour chicken</section><section>₹190</section></div>
+                <div class="item"><section>cream of chicken</section><section>₹190</section></div>
+                <div class="item"><section>chicken clear soup</section><section>₹190</section></div>
+                <div class="item"><section>sweet corn chicken</section><section>₹190</section></div>
+                <div class="item"><section>chicken manchow</section><section>₹190</section></div>
+                <div class="item"><section>crab soup</section><section>₹210</section></div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="food-section">
+        <div class="LL">
+            <div class="wrapper">
+                <h2>TANDOOR STARTERS</h2>
+                <div class="item"><section>tandoor chicken (half / full)</section><section>₹250 / ₹450</section></div>
+                <div class="item"><section>chicken tikka</section><section>₹350</section></div>
+                <div class="item"><section>chicken malai kebab</section><section>₹370</section></div>
+                <div class="item"><section>paneer tikka</section><section>₹360</section></div>
+                <div class="item"><section>aalo gobi tandoori</section><section>₹270</section></div>
+            </div>
+        </div>
+        <div class="section-image"><img src="tandoor.jpeg" style="width: 100%; border-radius: 10px;"></div>
+    </div>
+    <div class="food-section">
+        <div class="section-image"><img src="65.jpeg" style="width: 100%; border-radius: 10px; height: 90%;"></div>
+        <div class="RR">
+            <div class="wrapper">
+                <h2>FRIED STARTERS</h2>
+                <div class="item"><section>gobi 65</section><section>₹230</section></div>
+                <div class="item"><section>paneer 65</section><section>₹320</section></div>
+                <div class="item"><section>chicken 65 (bone / boneless)</section><section>₹300 / ₹320</section></div>
+            </div>
+        </div>
+    </div>
+    <div class="food-section">
+        <div class="LL">
+            <div class="wrapper">
+                <h2>VEG STARTERS</h2>
+                <div class="item"><section>baby corn</section><section>₹370</section></div>
+                <div class="item"><section>tawa grilled paneer</section><section>₹390</section></div>
+                <div class="item"><section>mushroom</section><section>₹370</section></div>
+                <div class="item"><section>veg cheese ball</section><section>₹340</section></div>
+            </div>
+        </div>
+        <div class="section-image"><img src="cheeseball.jpeg" style="width: 100%; border-radius: 10px; height: 80%;"></div>
+    </div>
+    <hr>
+    <div id="pagination">
+        <a href="#">&laquo;</a>
+        <a href="Menu.html">1</a>
+        <a href="Main_Courses.html">2</a>
+        <a href="Main_Course2.html">3</a>
+        <a href="Desserts.html">4</a>
+        <a href="Main_Courses.html">&raquo;</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{background-image: linear-gradient(to top,rgb(60,60,60),rgb(20,20,20)); min-height: 100vh;}
+
+        .item{display: flex; justify-content: space-between; max-width: 500px; min-width: 350px; margin: 8px; border-bottom: 1px dotted white; gap: 50px; align-items: center;}
+        
+        .food-section {display: flex;justify-content: space-between;align-items: flex-start;gap: 10px;margin: 20px;}
+
+        .section-image{width: 450px;height: 450px;border-radius: 10px; margin-left: 20px; margin-top: 10px;}
+
+        section{color: white; font-family: Verdana; text-transform: uppercase;}
+
+        h2{border: 1px solid black; padding: 10px; border-radius: 10px; background-color: orange; max-width: 32%;}
+
+        .wrapper{display: flex; justify-content: flex-end; flex-direction: column;}
+
+        .LL{flex: 1; max-width: 60%;}
+
+        .RR{flex: 1; max-width: 60%;}
+
+        .RR .wrapper{align-items: flex-end;}
+
+        .LL .wrapper{align-items: flex-start;}
+
+        #pagination{display: flex; justify-content: space-between;}
+
+        a{text-decoration: none; color: white; border: 1px solid aliceblue; padding: 5px; border-radius: 3px;}
+
+        a:hover{background-color: purple; color: orange;}
+
+        #Listitem{display: none; list-style: none; position: absolute; width: 20%;}
+        #Listitem li{padding: 5px; background-color: orange; margin: 2px;}
+        #nav_but{background-color: orange; border: 1px solid black; border-radius: 5px;}
+        #nav_but:hover{background-color: purple; color: orange;}
+        #nav_but:hover + #Listitem{display: block;}
+        li a{color: purple; text-decoration: none; border: 0px;}
+        
+
+    </style>
+</head>
+<body>
+
+    <h1 style="font-family: sans-serif; color: aliceblue; text-align: center;">FOOD MENU</h1> 
+    <h3 style="font-family: sans-serif; color: aliceblue; text-align: center;"> XYZ RESTRAUNT</h3>
+    <hr>
+    <div class="food-section">
+        <div class="LL">
+            <div class="wrapper">
+                <h2>CHICKEN MAIN COURSE</h2>
+                <div class="item"><section>chicken masala</section><section>₹320</section></div>
+                <div class="item"><section>chicken kadai</section><section>₹320</section></div>
+                <div class="item"><section>chicken tikka masala</section><section>₹360</section></div>
+                <div class="item"><section>butter chicken masala</section><section>₹350</section></div>
+                <div class="item"><section>chicken lahori</section><section>₹370</section></div>
+            </div>
+        </div>
+        <div class="section-image"><img src="chicken masala.jpeg" style="width: 100%; border-radius: 10px;"></div>
+    </div>
+    <div class="food-section">
+        <div class="section-image"><img src="muttonmasala.jpeg" style="width: 100%; border-radius: 10px;"></div>
+        <div class="RR">
+            <div class="wrapper">
+                <h2>MUTTON MAIN COURSE</h2>
+                <div class="item"><section>mutton masala</section><section>₹320</section></div>
+                <div class="item"><section>mutton kadai</section><section>₹320</section></div>
+                <div class="item"><section>keema hyderabadi</section><section>₹480</section></div>
+                <div class="item"><section>dal gosht</section><section>₹430</section></div>
+                <div class="item"><section>mutton rara</section><section>₹470</section></div>
+            </div>
+        </div>
+    </div>
+    <div class="food-section">
+        <div class="LL">
+            <div class="wrapper">
+                <h2>SEAFOOD MAIN COURSE</h2>
+                <div class="item"><section>fish curry / masala</section><section>₹390</section></div>
+                <div class="item"><section>fish tawa masala</section><section>₹410</section></div>
+                <div class="item"><section>prawn masala</section><section>₹430</section></div>
+                <div class="item"><section>crab pepper fry</section><section>₹400</section></div>
+                <div class="item"><section>squid pepper fry</section><section>₹410</section></div>
+            </div>
+        </div>
+        <div class="section-image"><img src="crab pepper fry.jpeg" style="width: 100%; border-radius: 10px;"></div>
+    </div>
+    <div class="food-section">
+        <div class="section-image"><img src="eggmasala.jpeg" style="width: 100%; border-radius: 10px; height: 90%;"></div>
+        <div class="RR">
+            <div class="wrapper">
+                <h2>EGG MAIN COURSE</h2>
+                <div class="item"><section>egg masala</section><section>₹180</section></div>
+                <div class="item"><section>egg bhurji</section><section>₹130</section></div>
+                <div class="item"><section>egg omelette</section><section>₹75</section></div>
+                <div class="item"><section>boiled egg (2 pieces)</section><section>₹50</section></div>
+            </div>
+        </div>
+    </div>
+    <div class="food-section">
+        <div class="LL">
+            <div class="wrapper">
+                <h2>BIRIYANI</h2>
+                <div class="item"><section>chicken dum biriyaani</section><section>₹270</section></div>
+                <div class="item"><section>mutton dum  biriyani</section><section>₹350</section></div>
+                <div class="item"><section>fish biriyani</section><section>₹360</section></div>
+                <div class="item"><section>prawn biriyani</section><section>₹360</section></div>
+                <div class="item"><section>biriyani rice</section><section>₹160</section></div>
+            </div>
+        </div>
+        <div class="section-image"><img src="biriyanii.jpeg" style="width: 100%; border-radius: 10px;"></div>
+    </div>
+    <hr>
+     <div id="pagination">
+        <a href="Main_Courses.html">&laquo;</a>
+        <a href="Menu.html">1</a>
+        <a href="#">2</a>
+        <a href="Main_Course2.html">3</a>
+        <a href="Desserts.html">4</a>
+        <a href="Desserts.html">&raquo;</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{background-image: linear-gradient(to top,rgb(60,60,60),rgb(20,20,20)); min-height: 100vh;}
+
+        .item{display: flex; justify-content: space-between; max-width: 500px; min-width: 350px; margin: 8px; border-bottom: 1px dotted white; gap: 50px; align-items: center;}
+        
+        .food-section {display: flex;justify-content: space-between;align-items: flex-start;gap: 10px;margin: 20px;}
+
+        .section-image{width: 450px;height: 450px;border-radius: 10px; margin-left: 20px; margin-top: 10px;}
+
+        section{color: white; font-family: Verdana; text-transform: uppercase;}
+
+        h2{border: 1px solid black; padding: 10px; border-radius: 10px; background-color: orange; max-width: 32%;}
+
+        .wrapper{display: flex; justify-content: flex-end; flex-direction: column;}
+
+        .LL{flex: 1; max-width: 60%;}
+
+        .RR{flex: 1; max-width: 60%;}
+
+        .RR .wrapper{align-items: flex-end;}
+
+        .LL .wrapper{align-items: flex-start;}
+
+        #pagination{display: flex; justify-content: space-between;}
+
+        a{text-decoration: none; color: white; border: 1px solid aliceblue; padding: 5px; border-radius: 3px;}
+
+        a:hover{background-color: purple; color: orange;}
+
+        #Listitem{display: none; list-style: none; position: absolute; width: 20%;}
+        #Listitem li{padding: 5px; background-color: orange; margin: 2px;}
+        #nav_but{background-color: orange; border: 1px solid black; border-radius: 5px;}
+        #nav_but:hover{background-color: purple; color: orange;}
+        #nav_but:hover + #Listitem{display: block;}
+        li a{color: purple; text-decoration: none; border: 0px;}
+        
+
+    </style>
+
+</head>
+<body>
+
+    <h1 style="font-family: sans-serif; color: aliceblue; text-align: center;">FOOD MENU</h1> 
+    <h3 style="font-family: sans-serif; color: aliceblue; text-align: center;"> XYZ RESTRAUNT</h3>
+    <hr>
+    <div class="food-section">
+        <div class="LL">
+            <div class="wrapper">
+                <h2>VEG MAIN COURSE</h2>
+                <div class="item"><section>dal fry / tadka / palak</section><section>₹190 / ₹200 / ₹210</section></div>
+                <div class="item"><section>mixed veg curry</section><section>₹200</section></div>
+                <div class="item"><section>aloo mutter</section><section>₹200</section></div>
+                <div class="item"><section>tomato green peas masala</section><section>₹210</section></div>
+                <div class="item"><section>mushroom masala</section><section>₹250</section></div>
+                <div class="item"><section>paneer butter masala</section><section>₹270</section></div>
+                <div class="item"><section>palak paneer</section><section>₹270</section></div>
+            </div>
+        </div>
+        <div class="section-image"><img src="vegstart1.jpeg" style="width: 100%; border-radius: 10px;"></div>
+    </div>
+    <div class="food-section">
+        <div class="section-image"><img src="bread.jpeg" style="width: 100%; border-radius: 10px;"></div>
+        <div class="RR">
+            <div class="wrapper">
+                <h2>BREADS</h2>
+                <div class="item"><section>chapati</section><section>₹32</section></div>
+                <div class="item"><section>wheat paratha</section><section>₹55</section></div>
+                <div class="item"><section>butter roti</section><section>₹44</section></div>
+                <div class="item"><section>kulcha (plain / paneer / aloo)</section><section>₹45 / ₹56 / ₹53</section></div>
+                <div class="item"><section>naan (plain / butter / garlic)</section><section>₹45 / ₹55 / ₹62</section></div>
+                <div class="item"><section>aloo paratha</section><section>₹58</section></div>
+                <div class="item"><section>gobi paratha</section><section>₹53</section></div>
+            </div>
+        </div>
+    </div>
+    <div class="food-section">
+        <div class="LL">
+            <div class="wrapper">
+                <h2>VEG DRY & GRAVY</h2>
+                <div class="item"><section>crispy veg / babycorn</section><section>₹260 / ₹260</section></div>
+                <div class="item"><section>salt & pepper (babycorn / mushroom)</section><section>₹280 / ₹290</section></div>
+                <div class="item"><section>paneer manchurian</section><section>₹310</section></div>
+                <div class="item"><section>cauliflower manchurian</section><section>₹260</section></div>
+                <div class="item"><section>babycorn manchurian</section><section>₹270</section></div>
+                <div class="item"><section>chilli potato</section><section>₹270</section></div>
+                <div class="item"><section>honey chilli potato</section><section>₹290</section></div>
+            </div>
+        </div>
+        <div class="section-image"><img src="veggrav.jpeg" style="width: 100%; border-radius: 10px;"></div>
+    </div>
+    <div class="RR">
+        <div class="wrapper">
+            <h2>SALADS</h2>
+            <div class="item"><section>green salad</section><section>₹110</section></div>
+            <div class="item"><section>veg olive salad</section><section>₹185</section></div>
+            <div class="item"><section>darjeeling salad</section><section>₹155</section></div>
+        </div>
+    </div>
+    <hr>
+     <div id="pagination">
+        <a href="Menu.html">&laquo;</a>
+        <a href="Menu.html">1</a>
+        <a href="Main_Courses.html">2</a>
+        <a href="Main_Course2.html">3</a>
+        <a href="Desserts.html">4</a>
+        <a href="Main_Course2.html">&raquo;</a>
+    </div>
+</body>
+</html>
